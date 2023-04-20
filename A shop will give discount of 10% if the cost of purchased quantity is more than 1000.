@@ -1,0 +1,31 @@
+/* A shop will give discount of 10% if the cost of purchased quantity is more than 1000.
+Ask user for quantity
+Suppose, one unit will cost 100.
+Judge and print total cost for user.
+ */
+ 
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[] ) throws Exception {
+        
+        Scanner sc = new Scanner(System.in);
+        double MRP = sc.nextDouble();
+        
+        double Discount = 0.12*MRP;
+        double New_MRP = MRP-Discount;
+        
+        if(MRP>=1000){
+            System.out.printf("%.3f", New_MRP);
+        }
+        
+        else{
+            System.out.printf("%.3f", MRP);
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    }
+}
