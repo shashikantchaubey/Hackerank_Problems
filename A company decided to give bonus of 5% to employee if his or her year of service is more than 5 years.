@@ -1,0 +1,25 @@
+/*A company decided to give bonus of 5% to employee if his/her year of service is more than 5 years.
+Ask user for their salary and year of service and print the net bonus amount.
+ */
+
+
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        double salary = sc.nextInt();
+        int year = sc.nextInt();
+        
+        double discount = salary*0.05;
+        if(year >= 5){
+            double new_salary = salary+discount;
+            System.out.printf("%.2f", new_salary);
+        }
+        else
+        {
+            System.out.printf("%.2f", salary);
+        }
+        /* Enter your code here */
+    }
+}
