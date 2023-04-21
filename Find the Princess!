@@ -1,0 +1,45 @@
+/* Coderman has to find the Princess! The princess has been kidnapped by Evilini but coderman has managed
+to find her co-ordinates. In order to reach her, Coderman first needs to find out in which quadrant the
+princess currently is in. Time is running out, help him
+
+Input Format
+Two double variables x, y
+Constraints
+None
+Output Format
+The quadrant in which the princess is kept prisoner (1, 2, 3 or 4)
+*/
+
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[] ) throws Exception {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        double x = sc.nextDouble();
+        double y = sc.nextDouble();
+        
+        if(x>0 && y>0){
+            System.out.println(1);
+            
+        }
+        if(x<0 && y>0){
+             System.out.println(2);
+        }
+        if(x<0 && y<0){
+             System.out.println(3);
+            
+        }
+        
+        if(x>0 && y<0){
+             System.out.println(4);
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    }
+}
